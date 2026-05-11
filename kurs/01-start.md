@@ -18,6 +18,8 @@ Gjennomfør disse stegene:
 1. Gå til https://github.com/settings/copilot/features
 2. Se at du har *Pro*, *Pro+*, *Enterprise* eller tilsvarende. *Free* er ikke tilstrekkelig.
 
+Dersom OK, kan du hoppe over neste steg og gå rett til [Oppgave: Sjekk at det virker](#oppgave-sjekk-at-det-virker).
+
 ### Du har ikke Copilot lisens
 1. Gå til https://arve.dev/ki
 2. Kopier API-nøkkelen
@@ -29,9 +31,9 @@ Gjennomfør disse stegene:
    5. Godta navnet OpenRouter
    6. Lim inn API-nøkkelen
 
-### Sjekk at det virker
+### Oppgave: Sjekk at det virker
 1. Åpne chat-vinduet, om det ikke er åpent (Ctrl + Alt/Cmd + I)
-2. Finn og velg modellen *Claude Sonnet 4.6*
+2. Finn og velg modellen *Claude Sonnet 4.6* (vi bruker denne modellen for alle oppgaver inntil vi ser på ulike modeller senere i kurset)
 3. Skriv inn denne instruksen:
 
 > lag et sammendrag av kurset
