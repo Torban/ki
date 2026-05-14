@@ -8,5 +8,5 @@
       ]
     }
   },
-  "postCreateCommand": "copilot -p 'hva er 1+1?' --model gpt-4o-mini > /dev/null 2>&1 && echo '✅ GitHub Copilot-tilgang er OK.' || echo '❌  Ingen GitHub Copilot-tilgang funnet. Gå til https://github.com/features/copilot for å aktivere gratis prøveperiode, eller logg inn med en bruker som har tilgang.'"
+  "postCreateCommand": "bash .devcontainer/init.sh"
 }
