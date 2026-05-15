@@ -1,3 +1,6 @@
 .env.local
 node_modules
 .devcontainer/copilot-ok
+.devcontainer/*-logg
+auth.json
+.playwright-mcp
