@@ -115,12 +115,12 @@ test.describe('Redigering', () => {
     // Click edit button on the timing item
     await page.locator('#timings-list button:has-text("✏️")').first().click();
 
-    // Fill in description
+    // Fill in description using pressSequentially to trigger real input events for HTMX
     const descInput = page.locator('#timings-list .edit-form input[name="description"]').first();
-    await descInput.fill('Oppdatert beskrivelse');
+    await descInput.pressSequentially('Oppdatert beskrivelse', { delay: 20 });
 
-    // Wait for HTMX save
-    await page.waitForTimeout(800);
+    // Wait for HTMX to send the debounced request and swap the DOM
+    await page.waitForResponse(resp => resp.url().includes('/edit-description'), { timeout: 5000 });
 
     // Verify description is updated
     await expect(page.locator('#timings-list').first()).toContainText('Oppdatert beskrivelse');
