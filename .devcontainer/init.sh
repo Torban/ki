@@ -6,7 +6,7 @@ failure=false
 
 if [[ ! -f "$root/.devcontainer/copilot-ok" ]]; then
   echo '🔍 Sjekker GitHub Copilot-tilgang...'
-  if copilot -p 'hva er 1+1?' --model claude-sonnet-4.6 &> "$root/.devcontainer/copilot-logg" \
+  if copilot --prompt 'hva er 1+1?' --model claude-sonnet-4.6 --effort none --disable-builtin-mcps --no-custom-instructions &> "$root/.devcontainer/copilot-logg" \
     && ! grep -i -E '(error|fail)' "$root/.devcontainer/copilot-logg" &> /dev/null \
     && grep 2 "$root/.devcontainer/copilot-logg" &> /dev/null
   then
@@ -21,12 +21,21 @@ else
   echo '✅ GitHub Copilot-tilgang er OK (cache).'
 fi
 
-echo '📦 Installerer opencode og playwright mcp...'
-if npm install --global opencode-ai @playwright/mcp &> "$root/.devcontainer/npm-install-logg"; then
-  echo '✅ opencode og Playwright MCP er installert.'
+opencode_ok=false
+playwright_mcp_ok=false
+command -v opencode &> /dev/null && opencode_ok=true
+npm list -g --depth=0 @playwright/mcp &> /dev/null && playwright_mcp_ok=true
+
+if [[ "$opencode_ok" == true && "$playwright_mcp_ok" == true ]]; then
+  echo '✅ opencode og Playwright MCP er allerede installert.'
 else
-  echo '❌  Feil ved installasjon av opencode eller Playwright MCP. Logg i .devcontainer/npm-install-logg'
-  failure=true
+  echo '📦 Installerer opencode og playwright mcp...'
+  if npm install --global opencode-ai @playwright/mcp &> "$root/.devcontainer/npm-install-logg"; then
+    echo '✅ opencode og Playwright MCP er installert.'
+  else
+    echo '❌  Feil ved installasjon av opencode eller Playwright MCP. Logg i .devcontainer/npm-install-logg'
+    failure=true
+  fi
 fi
 
 if [[ "$failure" == true ]]; then

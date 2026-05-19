@@ -1,5 +1,10 @@
 {
   "name": "KI for utviklere",
+// Dersom du ønsker å kjøre devcontainer lokalt, kan du bruke denne dockerfilen.
+// Det er ikke anbefalt i kurset, ettersom du da trenger å laste ned docker image og
+// installere pakker, som tar litt tid. Koble heller lokal VSCode til Codespaces,
+// som gir samme opplevelse, men er raskere.
+//  "dockerFile": "Dockerfile",
   "customizations": {
     "vscode": {
       "extensions": [
