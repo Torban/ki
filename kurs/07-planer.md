@@ -74,4 +74,4 @@ git push
 
 > @eksport.md implementer funksjonaliteten beskrevet
 
-Neste steg er [08-gode-afk-resultat.md](08-veien-videre.md).
+Neste steg er [08-veien-videre.md](08-veien-videre.md).

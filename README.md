@@ -70,8 +70,5 @@ En god plan lar agenten jobbe selvstendig over lengre tid.
 - Bruk OpenCode CLI som alternativ til Copilot Chat i terminalen
 - La agenten implementere planen fra start til slutt
 
-#### Del 8 – Gode AFK-resultat
-Optimaliser slik at resultatet er bra når agenten er ferdig.
-- Bruk CLI-agenter som får jobbe uavbrutt
-- Gi agenten instrukser for å verifisere sitt eget arbeid
-- Bruk `--yolo` i en sandkasse for å unngå bekreftelsesdialog
+#### Del 8 – Veien videre
+Forslag til vei videre, tips og triks som er kjekt å kjenne til.
