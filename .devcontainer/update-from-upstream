@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+git pull upstream main --rebase
+git push origin main --force
