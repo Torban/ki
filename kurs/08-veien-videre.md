@@ -197,6 +197,13 @@ Gode abstraksjoner (interfaces, modularitet). Bra testing (ende til ende, beskri
 
 
 # Diktering
+Siden KI-modellene er så gode på språk og tastatur er tregere enn å snakke, prøv diktering. Det er effektivt spesielt i en planleggingsfase der du ber agenten om å lage en plan.
+
+På MacOS er diktering innebygd, du finner det under _Systeminnstillinger_, søk etter _Diktering_:
+
+![innstillinger for diktering på macos](diktering.png)
+
+> dette er skrevet med diktering. Veldig nyttig når du har mange detaljer om en ting du skal lage men ikke orker å skrive ned alle detaljene som fin prosa. Ofte oppdager jeg at jeg tenker saktere enn jeg snakker og jeg må stoppe opp for å tenke hva som er neste naturlige setning. I motsetning til når jeg skriver der teksten alltid er klar for meg fordi jeg skriver så sakte.
 
 
 # Ulike typer modeller
