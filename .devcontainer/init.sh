@@ -40,6 +40,7 @@ fi
 
 echo "⏳ Installerer rg og fd-find..."
 if sudo apt-get update && sudo apt-get install -y ripgrep fd-find &> "$root/.devcontainer/apt-install-logg"; then
+  sudo ln -s "$(which fdfind)" /usr/local/bin/fd
   echo '✅ rg og fd-find er installert.'
 else
   echo '❌  Feil ved installasjon av rg eller fd-find. Logg i .devcontainer/apt-install-logg'
