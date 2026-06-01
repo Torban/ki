@@ -29,12 +29,9 @@ Dersom OK, kan du hoppe over neste steg og gå rett til [Oppgave: Sjekk at det v
 
 ### Du har ikke Copilot lisens
 Dersom du ikke har Copilot-lisens, kan du bruke en API-nøkkel som gir deg tilgang til
-samme KI-modell via OpenRouter.
+samme KI-modell via [OpenRouter](https://openrouter.ai).
 
-MERK! Dette fungerer kun dersom du bruker lokal VSCode, se [lokal editor](#lokal-editor).
-
-1. Gå til https://arve.dev/ki
-2. Kopier API-nøkkelen
+1. Be kursholder om API-nøkkel
 2. I VSCode, legg til OpenRouter API-nøkkel:
 3. Ctrl/Cmd + Shift + P
 4. `> Chat: Manage Language Models`
