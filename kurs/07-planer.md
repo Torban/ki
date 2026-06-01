@@ -67,9 +67,21 @@ Hvis OK, prøv:
 
 > Legg inn en rad med timeføring. Trykk på feltene og velg første alternativ på valg som blir synlig. Legg inn teksten "AI-kurs" på beskrivelse og 1.5 timer tirsdag. Lagre skjermbilde til timeføring3.png
 
+Så ukesnavigering:
+
+> Lagre endringene. Naviger til neste uke. Lagre skjermbilde til timeføring4.png
+
+Og til en bestemt uke:
+
+> Finn den enkleste måten å navigere til første uke i mai, noe som er deterministisk. Lagre skjermbilde til timeføring5.png
+
+Og tilbake igjen, for å sjekke at timeføringen ble lagret:
+
+> Naviger tilbake til uken vi fylte inn. Lagre skjermbilde til timeføring6.png
+
 Dette er informasjonen som planen trenger, be agenten legge det til planen:
 
-> @tidtaker/eksport.md utvid planen med aktuelle ting en må trykke på for å gjennomføre timeføringen. Bruk selektorer som sannsynligvis ikke endrer seg, slik som tekst eller titler.
+> @eksport.md utvid planen med aktuelle ting en må trykke på for å gjennomføre timeføringen. Bruk selektorer som sannsynligvis ikke endrer seg, slik som tekst eller titler.
 
 Lagre endringene i eksport.md:
 
