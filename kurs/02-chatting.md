@@ -21,7 +21,7 @@ Passer bra til:
   > Jeg skal lage en ny ting, hvordan kan jeg gjøre det?
 
 ## Norsk eller engelsk?
-Min erfaring er at norsk er like godt som engelsk, samt at min hjerne er flinkere å produsere fullstendige setninger på norsk og at det er enklere å diktere. Altså foretrekker jeg norsk når jeg chatter. Har du fått et dårlig svar og ønsker å prøve på engelsk, kan du enkelt ta den lange instruks og oversette den, før en prøver igjen på engelsk:
+Min erfaring er at norsk er like godt som engelsk, samt at min hjerne er flinkere å produsere fullstendige setninger på norsk og at det er enklere å diktere. Altså foretrekker jeg norsk når jeg chatter. Har du fått et dårlig svar og ønsker å prøve på engelsk, kan du enkelt ta en lang instruks og oversette den, før en prøver igjen på engelsk:
 
 > Oversett dette til engelsk: ....
 
