@@ -10,6 +10,7 @@ Dette er et kurs som går gjennom hva jeg har lært, steg for steg, slik at andr
 ## Hva trenger du for å gjennomføre kurset?
 1. En Github-bruker.
 2. Abonnement for Copilot hos Github.
+3. [VSCode](https://code.visualstudio.com) installert på din PC.
 
 > Kurset legger opp til å bruke Github 100%, så vi slipper bruke tid på oppsett, men du kan gjennomføre kurset lokalt på din egen PC med eget KI-abonnement også, på egen risiko.
 
