@@ -25,14 +25,20 @@ Prøv nå denne instruksen:
 
 Merk: _/grill-me_ aktiverer skillen. Aktivering kan også skje ved at beskrivelsen til skill inneholder "bruk denne instruksen hver gang du lager git commits" eller at din instruks er "bruk grill-me skill".
 
+Hvis den spør om hvilket timeføringssystem du bruker, se neste oppgave.
+
 ## Oppgave: Legge til del av nettside som kontekst
 De fleste kjipe timeføringssystemer har ingen API-er, derfor har jeg valgt å automatisere via en plugin i nettleser. Grill-me er ikke deterministisk, men sannsynligvis vil den spørre om hvordan timeføringsprogram du bruker, samt om hvordan timene skal legges inn. Da kan du mate det spesifikke HTML-elementet fra timeføringsprogrammet som kontekst:
 
 1. _Ctrl/Cmd + Shift + P_
 2. _Browser: Open Integrated Browser_
 3. Gå til og logg inn på timeføringssiden.
+4. Trykk på knappen bak URL _Share with agent_ og del med agenten.
+5. Prøv denne instruksen.
 
-Oppe til høyre er det en knapp _Add element to chat_ som lar deg velge element fra siden med musen. Dette hjelper agenten å finne ut hvordan timeføringene skal legges inn.
+> jeg bruker timeføringssystemet som du ser på websiden
+
+Dersom du får spørsmål om spesifikke element, lar neste knapp _Add element to chat_ et spesifikt HTML-element.
 
 ## Oppgave: Avslutte
 Grill-me er omstendig og en kan sitte i en time og svare på spørsmål i noen tilfeller. Når du har gitt informasjon om hvordan timene skal føres inn, be om å avslutte:
@@ -42,7 +48,7 @@ Grill-me er omstendig og en kan sitte i en time og svare på spørsmål i noen t
 Lagre resultatet i git og push det.
 
 ## Når bruker en skills?
-Tenk "jeg kommer til å bruke denne instruksen igjen, men den trengs ikke alltid". Jeg har brukt skills til å oppgradere java, standardisere oppsett, sørge for at siste versjon benyttes for java-biblioteker, oppgradering av github workflows, osv.
+Tenk "jeg kommer til å bruke denne instruksen igjen, men den trengs ikke alltid". Jeg har brukt skills til å skrive gode git-commits, opprette pull requests basert på commits, oppgradere java, standardisere oppsett, sørge for at siste versjon benyttes for java-biblioteker, oppgradere github workflows, osv.
 
 ## Tips for skills
 1. En skill er bare en vanlig instruks, tekst du kan skrive selv.
