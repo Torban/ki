@@ -14,9 +14,9 @@ Du har allerede fått en forsmak på agenter. I de forrige oppgavene ba vi agent
 ![logget inn i tidtaker med bruker](tidtaker-innlogget.png)
 
 ## Oppgave: Endre tidtaker-applikasjonen
-Legg merke til at datoen skrives som "21.04.2026".
-
-Prøv denne instruksen:
+1. Start og stopp en tidtakning.
+2. Legg merke til at datoen skrives som "21.04.2026".
+3. Prøv denne instruksen:
 
 > I applikasjonen tidtaker vises datoen til en tidtaking som "21.04.2026", men jeg ønsker format på formen "21. april 2026". Kan du endre implementasjonen?
 
