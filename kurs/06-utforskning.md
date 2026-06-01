@@ -17,6 +17,9 @@ Vi starter med å legge til [grill me skill](https://github.com/mattpocock/skill
 ```shell
 mkdir -p "$(git rev-parse --show-toplevel)/.agents/skills/grill-me"
 curl --location https://raw.githubusercontent.com/mattpocock/skills/refs/heads/main/skills/productivity/grill-me/SKILL.md --output "$(git rev-parse --show-toplevel)/.agents/skills/grill-me/SKILL.md"
+git add .agents/skills
+git commit -m "la til grill-me skill"
+git push
 ```
 
 Prøv nå denne instruksen:
