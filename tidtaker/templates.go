@@ -177,9 +177,15 @@ func formatTime(dt types.DateTime) string {
 	return dt.Time().Format("15:04:05")
 }
 
+var norwegianMonths = [...]string{
+	"januar", "februar", "mars", "april", "mai", "juni",
+	"juli", "august", "september", "oktober", "november", "desember",
+}
+
 func formatDate(dt types.DateTime) string {
 	if dt.IsZero() {
 		return "-"
 	}
-	return dt.Time().Format("02.01.2006")
+	t := dt.Time()
+	return fmt.Sprintf("%d. %s %d", t.Day(), norwegianMonths[t.Month()-1], t.Year())
 }

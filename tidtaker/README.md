@@ -11,6 +11,7 @@ En tidsregistreringsapplikasjon bygget med PocketBase og HTMX.
 - **Uendelig scroll** – Bla gjennom alle registreringer med automatisk lasting
 - **Søk** – Fulltekstsøk på beskrivelse og tagger (AND-basert)
 - **Filter og sortering** – Filtrer på tagger, sorter på tid eller beskrivelse
+- **Norsk datoformat** – Datoer vises på formen «21. april 2026»
 
 ## Stack
 
