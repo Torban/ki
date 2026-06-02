@@ -4,7 +4,8 @@
   <!-- Active timer -->
   <div class="text-center">
     <div class="text-lg font-medium text-green-600 mb-2">Timer aktiv</div>
-    <div class="text-3xl font-mono font-bold text-gray-800 mb-4" id="active-timer">
+    <div class="text-3xl font-mono font-bold text-gray-800 mb-4" id="active-timer"
+      data-start="{{unixMilli (.ActiveTiming.GetDateTime "startTime")}}">
       {{formatDuration (.ActiveTiming.GetDateTime "startTime") (.ActiveTiming.GetDateTime "stopTime")}}
     </div>
     <button
@@ -64,4 +65,39 @@
   </div>
   {{end}}
 </div>
+
+<script>
+(function() {
+  var el = document.getElementById('active-timer');
+  if (!el) return;
+  var startMs = parseInt(el.dataset.start, 10);
+  if (!startMs) return;
+
+  function formatDuration(totalSec) {
+    var h = Math.floor(totalSec / 3600);
+    var m = Math.floor((totalSec % 3600) / 60);
+    var s = totalSec % 60;
+    if (h > 0) return h + 't ' + String(m).padStart(2,'0') + 'm ' + String(s).padStart(2,'0') + 's';
+    if (m > 0) return m + 'm ' + String(s).padStart(2,'0') + 's';
+    return s + 's';
+  }
+
+  function tick() {
+    var elapsed = Math.floor((Date.now() - startMs) / 1000);
+    el.textContent = formatDuration(elapsed);
+  }
+
+  tick();
+  var interval = setInterval(tick, 1000);
+
+  // Clean up when HTMX swaps this element out
+  el.addEventListener('htmx:beforeSwap', function() { clearInterval(interval); });
+  document.body.addEventListener('htmx:beforeSwap', function onSwap() {
+    if (!document.getElementById('active-timer')) {
+      clearInterval(interval);
+      document.body.removeEventListener('htmx:beforeSwap', onSwap);
+    }
+  });
+})();
+</script>
 {{end}}

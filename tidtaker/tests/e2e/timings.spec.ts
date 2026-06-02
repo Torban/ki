@@ -35,6 +35,17 @@ test.describe('Timer start/stop', () => {
     await expect(page.locator('#timer-section')).toContainText('Ingen aktiv timer');
   });
 
+  test('timeren teller uten å oppfriske siden', async ({ page }) => {
+    await page.click('button:has-text("Start")');
+    await expect(page.locator('#active-timer')).toBeVisible();
+
+    const first = await page.locator('#active-timer').textContent();
+    await page.waitForTimeout(2000);
+    const second = await page.locator('#active-timer').textContent();
+
+    expect(first).not.toEqual(second);
+  });
+
   test('stoppad timer vises i listen', async ({ page }) => {
     await page.click('button:has-text("Start")');
     await expect(page.locator('#timer-section')).toContainText('Timer aktiv');

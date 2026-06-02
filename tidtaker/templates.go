@@ -52,6 +52,12 @@ var funcMap = template.FuncMap{
 		}
 		return dt.Time().Format("2006-01-02T15:04")
 	},
+	"unixMilli": func(dt types.DateTime) int64 {
+		if dt.IsZero() {
+			return 0
+		}
+		return dt.Time().UnixMilli()
+	},
 }
 
 func initTemplates() {
